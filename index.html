@@ -137,3 +137,131 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log Your Fitness & Nutrition</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fff9;
+      padding: 20px;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      color: #28a745;
+    }
+    form {
+      background: #fff;
+      border: 1px solid #d9f0dd;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .coming-soon {
+      font-size: 0.85em;
+      color: #888;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Log Your Activity</h1>
+
+  <!-- Workout Form -->
+  <form>
+    <label for="activity">Workout Type</label>
+    <select id="activity" name="activity">
+      <option>Running</option>
+      <option>Walking</option>
+      <option>Cycling</option>
+      <option>Pickleball</option>
+      <option>Tennis</option>
+      <option>Strength Training</option>
+      <option>Yoga / Stretching</option>
+      <option>Swimming</option>
+      <option>HIIT / Circuit</option>
+      <option>Dance / Aerobics</option>
+      <option>Hiking</option>
+      <option>Other (type below)</option>
+    </select>
+
+    <label for="other-activity">If 'Other', enter activity name</label>
+    <input type="text" id="other-activity" name="other-activity" placeholder="e.g. Martial Arts, Rowing" />
+
+    <label for="duration">Duration (minutes)</label>
+    <input type="number" id="duration" name="duration" placeholder="e.g. 45" />
+
+    <label for="intensity">Intensity</label>
+    <select id="intensity" name="intensity">
+      <option>Low</option>
+      <option>Moderate</option>
+      <option>High</option>
+    </select>
+
+    <label for="calories">Calories Burned (optional)</label>
+    <input type="number" id="calories" name="calories" placeholder="e.g. 300" />
+
+    <button type="submit">Save Workout</button>
+  </form>
+
+  <h1>Log Your Nutrition</h1>
+
+  <!-- Nutrition Form -->
+  <form>
+    <label for="food">Food Name</label>
+    <input type="text" id="food" name="food" placeholder="e.g. Grilled Chicken Breast" />
+
+    <label for="amount">Amount (g or units)</label>
+    <input type="text" id="amount" name="amount" placeholder="e.g. 150g" />
+
+    <label for="meal">Meal Type</label>
+    <select id="meal" name="meal">
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Dinner</option>
+      <option>Snack</option>
+    </select>
+
+    <label for="calories-food">Calories</label>
+    <input type="number" id="calories-food" name="calories-food" placeholder="e.g. 280" />
+
+    <label for="macros">Macros (Protein / Carbs / Fat)</label>
+    <input type="text" id="macros" name="macros" placeholder="e.g. 30g / 10g / 5g" />
+
+    <label>Scan Food (Coming Soon)</label>
+    <div class="coming-soon">Scan by barcode or photo — launching in a future version.</div>
+
+    <button type="submit">Save Meal</button>
+  </form>
+
+</body>
+</html>
